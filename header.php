@@ -16,7 +16,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="cadastro.php"> Cadastro de Aluno(a) <span class="sr-only">(Página
                             atual)</span></a>
                 </li>

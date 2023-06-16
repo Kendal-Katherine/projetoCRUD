@@ -9,14 +9,12 @@
       include_once "AlunoDao.php";
       $ra = intval($_GET["ra"]);
       $nome = $_GET["nome"];
-      $formato = "d/m/Y";
-      $dataNascimento =
-        DateTime::createFromFormat($formato, $_GET["dataNascimento"]);
+      $dataNascimento = $_GET["dataNascimento"];
       $renda = floatval($_GET["renda"]);
       $aluno = new Aluno(
         $ra,
         $nome,
-        $dataNascimento->format("Y-m-d"),
+        $dataNascimento,
         $renda
       );
       $dao = new AlunoDao();
@@ -40,7 +38,7 @@
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">Data de nascimento:</label>
-          <input required type="text" name="dataNascimento" class="form-control" placeholder="DD/MM/AAAA" />
+          <input required type="date" name="dataNascimento" class="form-control" placeholder="DD/MM/AAAA" />
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">Renda:</label>

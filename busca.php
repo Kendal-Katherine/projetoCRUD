@@ -28,7 +28,7 @@
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Data de nascimento:</label>
-            <input type="text" name="dataNascimento" class="form-control" value="<?php echo $dataNascimento->format("d/m/Y") ?>" />
+            <input type="date" name="dataNascimento" class="form-control" value="<?php echo $f->getDataNascimento() ?>" />
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Renda:</label>
